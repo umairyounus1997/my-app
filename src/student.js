@@ -12,17 +12,17 @@
 // export default Student;
 
 //props
-// import React, { Component } from "react";
-// import PropTypes from "prop-types";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-// const Student = props =>{
-//     return(
-//     <div>
-//         <h1>Hello, {props.name}</h1>
-//     <h1>Your Profile No: {props.roll}</h1>
-//         </div>
-//     );
-// };
+const Student = props =>{
+    return(
+    <div>
+        <h1>Hello, {props.name}</h1>
+    <h1>Your Profile No: {props.roll}</h1>
+        </div>
+    );
+};
 
 // class Student extends Component{
 //     render(){
@@ -38,7 +38,7 @@
 
 //     name: PropTypes.string.isRequired
 // }; 
-// export default Student;
+export default Student;
 
 // Children in JSX
 

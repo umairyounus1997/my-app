@@ -11,12 +11,12 @@
 
 //props
 
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import Student from "./student";
-// ReactDOM.render(
-// <Student name = " Umair" roll={101}/>,
-// document.getElementById("root"));
+import React from "react";
+import ReactDOM from "react-dom";
+import Student from "./student";
+ReactDOM.render(
+<Student name = " Umair" roll={101}/>,
+document.getElementById("root"));
 
 //Children in JSX
 // import React from "react";
