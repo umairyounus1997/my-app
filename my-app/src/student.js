@@ -127,27 +127,51 @@
 
 //Update setState
 
+// import React, { Component } from 'react';
+// class Student extends Component{
+// constructor(props){
+//     super(props);
+//     this.state = {
+//         name: "Umair",
+//         roll: this.props.roll
+//     };
+// }
+
+//     handleClick = () =>{
+//         this.setState({name: "Ali", roll: "98980"});
+//     };
+//     render(){
+//         return(
+//             <div>
+//                 <h1> Hello {this.state.name} Your Roll No. {this.state.roll} </h1>
+//                 <button onClick={this.handleClick}>Click Me</button>
+//                 </div>
+//         )
+//     }
+// }
+// export default Student;
+
+//Passing Arguments to Event Handler
+
 import React, { Component } from 'react';
 class Student extends Component{
-constructor(props){
-    super(props);
-    this.state = {
-        name: "Umair",
-        roll: this.props.roll
-    };
+    //State without Constructor
+state = {
+    name:"Umair"
 }
-
+//Event Handler Arrow Function
     handleClick = () =>{
-        this.setState({name: "Ali", roll:"907880"});
-    };
+        console.log("Button Clicked ");
+    }
     render(){
         return(
             <div>
-                <h1> Hello {this.state.name} Your Roll No. {this.props.roll} </h1>
+                <h1> Hello {this.state.name} </h1>
                 <button onClick={this.handleClick}>Click Me</button>
                 </div>
         )
     }
 }
 export default Student;
+
 
