@@ -157,19 +157,24 @@ import React, { Component } from 'react';
 class Student extends Component{
     //State without Constructor
 state = {
+    id: 1,
     name:"Umair"
-}
+};
 //Event Handler Arrow Function
-    handleClick = () =>{
-        console.log("Button Clicked ");
+    handleClick = (id) =>{
+        console.log(id);
+    };
+
+    handleClickArg = () => {
+        this.handleClickArg = ()=> { this.handleClick(this.state.id);};
     }
     render(){
         return(
             <div>
                 <h1> Hello {this.state.name} </h1>
-                <button onClick={this.handleClick}>Click Me</button>
+                <button onClick={this.handleClickArg}>Delete</button>
                 </div>
-        )
+        );
     }
 }
 export default Student;
