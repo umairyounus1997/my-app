@@ -138,7 +138,7 @@ constructor(props){
 }
 
     handleClick = () =>{
-        this.setState({name: "Jai"});
+        this.setState({name: "Ali", roll:"907880"});
     };
     render(){
         return(
