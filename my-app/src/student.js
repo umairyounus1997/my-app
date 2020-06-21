@@ -161,17 +161,17 @@ state = {
     name:"Umair"
 };
 //Event Handler Arrow Function
-    handleClick = (id) =>{
+    handleClick = (id, e)=> {
         console.log(id);
     };
 
     handleClickArg = () => {
-        this.handleClickArg = ()=> { this.handleClick(this.state.id);};
+        this.handleClick(this.state.id);};
     }
     render(){
         return(
             <div>
-                <h1> Hello {this.state.name} </h1>
+                <h1> Hello, {this.state.name} </h1>
                 <button onClick={this.handleClickArg}>Delete</button>
                 </div>
         );
